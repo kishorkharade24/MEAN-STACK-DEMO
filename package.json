@@ -1,0 +1,17 @@
+ {
+  "name": "invoicer",
+  "version": "1.0.0",
+  "description": "simple client management",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines" : { "node" : "~4.4.4" } ,
+  "dependencies": {
+      "express": "*",
+      "mongoose":"*",
+      "body-parser":"*"
+  },
+  "author": "nitin singh",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+<div ng-init="getCustomer()">
+    <img class="pull-right img-small" src="{{customer.logo_url}}">
+    <div class="clearfix"></div>
+    <h2 class="sub-header">{{customer.first_name}} {{customer.last_name}}</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Email: </strong>
+        {{customer.email}}</li>
+        <li class="list-group-item"><strong>Phone: </strong>
+        {{customer.phone}}</li>
+        <li class="list-group-item"><strong>Street: </strong>
+        {{customer.address.street}}</li>
+        <li class="list-group-item"><strong>City: </strong>
+        {{customer.address.city}}</li>
+         <li class="list-group-item"><strong>State: </strong>
+        {{customer.address.state}}</li>
+         <li class="list-group-item"><strong>Zip: </strong>
+        {{customer.address.zip}}</li>
+    
+    </ul>
+</div>

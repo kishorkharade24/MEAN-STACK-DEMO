@@ -1,0 +1,70 @@
+<h2>Add Customer</h2>
+
+<form ng-submit="addCustomer()" >
+  <div class="form-group row">
+    <label >First Name</label>
+    
+      <input type="text" class="form-control" name="first_name" ng-model="customer.first_name" placeholder="First Name">
+   
+  </div>
+  <div class="form-group row">
+    <label >Last Name</label>
+    
+      <input type="text" class="form-control" name="last_name" ng-model="customer.last_name" placeholder="Last Name">
+    
+  </div>
+  <div class="form-group row">
+    <label >Company</label>
+    
+      <input type="text" class="form-control" name="company" ng-model="customer.company" placeholder="Company">
+    
+  </div>
+  <div class="form-group row">
+    <label >Logo URL</label>
+    
+      <input type="text" class="form-control" name="logo_url" ng-model="customer.logo_url" placeholder="LOGO URL">
+  
+  </div>
+  <div class="form-group row">
+    <label >Email</label>
+    
+      <input type="email" class="form-control" name="email" ng-model="customer.email" placeholder="Email">
+   
+  </div>
+  <div class="form-group row">
+    <label >Phone</label>
+  
+      <input type="text" class="form-control" name="phone" ng-model="customer.phone" placeholder="Phone">
+    
+  </div>
+  <div class="form-group row">
+    <label >Street Address</label>
+    
+      <input type="text" class="form-control" name="street" ng-model="customer.address.street" placeholder="Street">
+   
+  </div>
+  <div class="form-group row">
+    <label >City</label>
+    
+      <input type="text" class="form-control" name="city" ng-model="customer.address.city" placeholder="City">
+   
+  </div>
+  <div class="form-group row">
+    <label >State</label>
+    
+      <input type="text" class="form-control" name="state" ng-model="customer.address.state" placeholder="State">
+    
+  </div>
+  <div class="form-group row">
+    <label >Zip</label>
+    
+      <input type="text" class="form-control" name="zip" ng-model="customer.address.zip" placeholder="zip">
+    
+  </div>
+  
+  <div class="form-group row">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </div>
+  </div>
+</form>

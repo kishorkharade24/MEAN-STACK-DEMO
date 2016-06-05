@@ -1,0 +1,41 @@
+<form ng-submit="updateInvoice()"  ng-init="getInvoice()">
+   
+   <div class="form-group row" ng-init="getCustomers()">
+    <label >Service</label>
+          <input type="text" class="form-control" name="service" ng-model="invoice.service" placeholder="Service">
+  </div>
+  <div class="form-group row">
+    <label >Customer</label>
+          <select class="form-control" name="customer" ng-model="invoice.customer_id"  placeholder="Customer" ng-disabled="true">
+              <option ng-repeat="customer in customers" value="{{customer._id}}">
+                  {{customer.first_name}} {{customer.last_name}} {{customer.company}}
+              </option>
+              </select>
+  </div> 
+  <div class="form-group row">
+    <label >Price</label>
+          <input type="text" class="form-control" name="price" ng-model="invoice.price" placeholder="Price">
+  </div>
+  <div class="form-group row">
+    <label >Due Date</label>
+          <input type="text" class="form-control" name="due" ng-model="invoice.due" placeholder="Due Date">
+  </div>
+  <div class="form-group row">
+    <label >Status</label>
+          <select class="form-control" ng-model="invoice.status" >
+              <option value="paid">Paid</option>
+              <option value="unpaid">UnPaid</option>
+              <option value="Overdue">Overdue</option>
+              <option value="cancelled">cancelled</option>
+          </select>
+              
+  </div>
+  
+ <div class="form-group row">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-secondary">Update</button>
+    </div>
+  </div>
+ 
+ 
+</form>
