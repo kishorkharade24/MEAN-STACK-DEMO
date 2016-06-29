@@ -1,1 +1,1 @@
-# MEAN-STACK-DEMO
+# MEAN-STACK-DEMO from git
